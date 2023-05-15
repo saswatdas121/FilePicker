@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New Profile</title>
+  <link rel="stylesheet" href="/styles/base.css">
+  <link rel="stylesheet" href="/styles/profiles.css">
+</head>
+<body>
+  <main id="new-user">
+     <form action="/profiles" method="POST" enctype="multipart/form-data"><!--multipart/form-data--This value is necessary if the user will upload a file through the form -->
+      <div class="form-control">
+        <label for="username">Username</label>
+         <input type="text" id="username" name="username" ><!--required--It is required to put some value for the user -->
+      </div>
+      <div class="form-control">
+        <label for="image">User image</label>
+        <input type="file" name="image" id="" required accept=".jpg,.png,.jpeg ">
+      </div>
+      <button class="btn">Save User</button>
+    </form>
+  </main>
+</body>
+</html>
